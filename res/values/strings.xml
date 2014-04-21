@@ -2,5 +2,6 @@
 
     <string name="app_name">Glasshole</string>
     <string name="glass_voice_trigger">go fuck yourself</string>
+    <string name="battery_trigger">check battery</string>
 
 </resources>
