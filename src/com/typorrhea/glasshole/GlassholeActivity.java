@@ -11,6 +11,8 @@ public class GlassholeActivity extends Activity {
 	{
 		super.onCreate(savedInstanceState);
 		Card card = new Card(this);
+		card.setImageLayout(Card.ImageLayout.FULL);
+		card.addImage(R.drawable.smiling_jackass);
 		card.setText("Thanks, I'll try!");
 		card.setFootnote("(glasshole)");
 		setContentView(card.getView());
