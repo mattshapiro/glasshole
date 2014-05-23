@@ -11,6 +11,27 @@
     <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT"/>
 
     <application>
+        <activity android:name=".BatteryActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/battery_50x50">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/battery_voice_trigger" />
+        </activity>
+        <activity android:name="com.typorrhea.glasshole.OutputActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/icon_50x50"
+            android:keepScreenOn="true">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/output_voice_trigger" />
+        </activity>
         <activity android:name=".GlassholeActivity"
             android:label="@string/app_name"
             android:icon="@drawable/icon_50x50">
@@ -20,6 +41,16 @@
             </intent-filter>
             <meta-data android:name="com.google.android.glass.VoiceTrigger"
                 android:resource="@xml/my_voice_trigger" />
+        </activity>
+        <activity android:name=".GlassTrombone"
+            android:label="@string/app_name" android:icon="@drawable/icon_50x50"
+            android:keepScreenOn="true">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data android:name="com.google.android.glass.VoiceTrigger"
+            	android:resource="@xml/trombone_voice_trigger" />
         </activity>
     </application>
 

@@ -3,5 +3,13 @@
     <string name="app_name">Glasshole</string>
     <string name="glass_voice_trigger">go fuck yourself</string>
     <string name="battery_trigger">check battery</string>
+    <string name="bouncy_voice_trigger">bouncy bouncy</string>
+    <string name="x">X: </string>
+    <string name="y">Y:</string>
+    <string name="z">Z: </string>
+    <string name="lat">latitude:</string>
+    <string name="lng">longitude: </string>
+    <string name="output_voice_trigger">how do you feel</string>
+    <string name="trombone_voice_trigger">play the trombone</string>
 
 </resources>
